@@ -110,7 +110,7 @@ const start = async () => {
         if (connection === 'open') {
             client.state = 'open'
             loadCommands()
-            client.log('🤖 Krypton Bot is ready!!')
+            client.log('🤖 BACKUP Bot is ready!!')
         }
     })
 
