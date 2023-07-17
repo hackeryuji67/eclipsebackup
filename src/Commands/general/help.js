@@ -1,5 +1,10 @@
 const list = [
     {
+        id:'master',
+        font:'Mαʂƚҽɾ',
+        emoji:'〽️'
+    },
+    {
         id: 'general',
         font: 'Gҽɳҽɾαʅ',
         emoji: '🔰'
@@ -15,8 +20,8 @@ const list = [
         emoji: '🎡'
     },
     {
-        id: 'music',
-        font: 'Mυʂιƈ',
+        id: 'misc',
+        font: 'Mιʂƈ',
         emoji: '💠'
     },
     {
@@ -58,12 +63,9 @@ module.exports = {
                     obj[item.category].push(item.name)
                 }
             })
-            let base = `⛩️ *❯──「Kɾყρƚσɳ」──❮* ⛩️
+            let base = `⛩️ *❯──${process.env.NAME}──❮* ⛩️
 
-👋 *Hi @${M.sender.split('@')[0]}* 🍃!
-
-🎋 *Support us by following us on instagram:*
-https://www.instagram.com/das_abae
+👋 *Kon'nichiwa @${M.sender.split('@')[0]}* I'm ${process.env.NAME} of Eclipse🍃!
 
 This help menu is designed to help you get started with the bot.`
             base += '\n\n ⟾ *📪Command list📪*'
